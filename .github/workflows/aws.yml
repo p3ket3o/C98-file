@@ -30,6 +30,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 env:
   ECR_REPOSITORY: c98-file          # set this to your Amazon ECR repository name
