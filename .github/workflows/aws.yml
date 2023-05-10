@@ -51,7 +51,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: env.AWS_REGION
+        aws-region: $AWS_REGION
         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
         role-session-name: C98-api-${{ github.ref_name }}-cicd
         role-duration-seconds: 600
