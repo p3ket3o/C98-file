@@ -52,7 +52,6 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-        role-session-name: C98-api-${{ github.ref_name }}-cicd
         role-duration-seconds: 1000
     - name: Login to Amazon ECR
       id: login-ecr
