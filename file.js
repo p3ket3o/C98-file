@@ -45,6 +45,10 @@ app.delete('/files/:name', (req, res) => {
   });
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.listen(3001, () => {
   console.log('Server started on http://localhost:3001');
 });
